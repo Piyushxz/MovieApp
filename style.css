@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #191919;
+    --cart-bg:#064663;
+    --text-color-primary:#fafafa;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    display: flex;
+    gap:4rem;
+    flex-wrap: wrap;
+    padding:10rem 4rem 3rem 6rem ;
+   
+}
+
+.header{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bg-color);
+    padding: 2rem 5rem 1rem 6rem;
+    z-index: 1;
+}
+
+.heading-1{
+    font-size: 3rem;
+    color : var(--text-color-primary)
+    
+    
+}
+
+.options{
+    display:flex;
+    margin-left: auto;
+    gap:10px;
+    align-items: center;
+    
+}
+.search-container{
+    margin-left:auto ;
+
+}
+.input{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 4px;
+    width: 25rem;
+    font-size: 1.25rem;
+    padding: 8px;
+    color:var(--text-color-primary);
+    
+    
+}
+
+.rating-select{
+    font-size: 1.25rem;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px;
+    color:var(--text-color-primary);
+
+}
+
+.option{
+    color :var(--bg-color);
+}
+
+ 
+
+.card{
+    width: 18rem;
+    border-radius: 4px;
+    background-color: var(--cart-bg);
+    
+}
+.card:hover{
+    scale:1.05;
+    transition: scale .5s;
+}
+.shadow{
+    box-shadow: #fafafa;
+}
+.card-image-container{
+    width: 100%;
+    height: 18rem;
+    
+}
+
+.card-image{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    position: center center;
+    padding: 8px 8px;
+}
+
+.movie-details{
+    color :var(--text-color-primary);
+    margin: 10px;
+    padding : 8px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.genre{
+    font-size: 0.875rem;
+}
+
+.title{
+    font-size: 1.1rem;
+}
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+}
+.star-ratings{
+    display: flex;
+    align-items: center;
+    gap:4px
+}

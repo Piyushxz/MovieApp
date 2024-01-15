@@ -1,0 +1,26 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "MovieApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piyushxz/MovieApp.git"
+  },
+  "keywords": [
+    "Movie"
+  ],
+  "author": "Piyush Savale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piyushxz/MovieApp/issues"
+  },
+  "homepage": "https://github.com/Piyushxz/MovieApp#readme",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cors": "^2.8.5"
+  }
+}
