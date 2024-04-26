@@ -100,7 +100,7 @@ const createMovieCard = (movies)=>{
 }
 }
 
-function getFilteredData(){
+function getFilteredData(searchValue){
     let filteredArrayOfMovies = searchValue?.length>0 ? movies.filter((movie) => 
     searchValue === movie.name.toLowerCase() ||
     movie.keywords.toLowerCase().split(",").includes(searchValue) ||
@@ -122,7 +122,7 @@ function getFilteredData(){
 
 function handleSearch(event){
     let searchValue = event.target.value.toLowerCase();
-    let filterBySearch = getFilteredData();
+    let filterBySearch = getFilteredData(searchValue);
     parentElement.innerHTML="";
     createMovieCard(filterBySearch);
 
